@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimatedHumanoid.Plugins", "AnimatedHumanoid.Plugins.csproj", "{2468E28F-80AD-D63D-F563-D166B06A5DE7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimatedHumanoid", "AnimatedHumanoid.csproj", "{F02393B3-838E-D5D7-2BCB-2C10F1A491E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimatedHumanoid.Editor.Plugins", "AnimatedHumanoid.Editor.Plugins.csproj", "{EA1988FC-EED9-A5EA-ADED-D15E8E773052}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2468E28F-80AD-D63D-F563-D166B06A5DE7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2468E28F-80AD-D63D-F563-D166B06A5DE7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2468E28F-80AD-D63D-F563-D166B06A5DE7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2468E28F-80AD-D63D-F563-D166B06A5DE7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F02393B3-838E-D5D7-2BCB-2C10F1A491E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F02393B3-838E-D5D7-2BCB-2C10F1A491E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F02393B3-838E-D5D7-2BCB-2C10F1A491E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F02393B3-838E-D5D7-2BCB-2C10F1A491E8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA1988FC-EED9-A5EA-ADED-D15E8E773052}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA1988FC-EED9-A5EA-ADED-D15E8E773052}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA1988FC-EED9-A5EA-ADED-D15E8E773052}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA1988FC-EED9-A5EA-ADED-D15E8E773052}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

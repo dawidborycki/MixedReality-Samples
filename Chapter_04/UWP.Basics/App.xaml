@@ -1,0 +1,11 @@
+﻿<Application
+    x:Class="UWP.Basics.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:converters="using:UWP.Basics.Converters"
+    RequestedTheme="Light">
+
+    <Application.Resources>
+        <converters:ToUpperConverter x:Key="ToUpperConverter" />
+    </Application.Resources>
+</Application>

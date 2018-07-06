@@ -1,0 +1,55 @@
+﻿<Page
+    x:Class="Communication.Provider.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"    
+    xmlns:controls="using:Microsoft.Toolkit.Uwp.UI.Controls"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <Style TargetType="StackPanel">
+            <Setter Property="VerticalAlignment"
+                    Value="Center"/>
+        </Style>
+               
+        <Style TargetType="TextBlock">
+            <Setter Property="FontSize"
+                    Value="32"/>
+            <Setter Property="HorizontalAlignment"
+                    Value="Center"/>
+            <Setter Property="FontWeight"
+                    Value="ExtraBlack"/>
+        </Style>
+
+        <Style TargetType="controls:RadialGauge">
+            <Setter Property="Minimum"
+                    Value="-1000"/>
+            <Setter Property="Maximum"
+                    Value="1000"/>
+            <Setter Property="ScaleWidth"
+                    Value="30"/>
+            <Setter Property="ScaleBrush"
+                    Value="LightGray"/>
+            <Setter Property="ScaleTickBrush"
+                    Value="Transparent"/>
+            <Setter Property="Width"
+                    Value="200"/>
+            <Setter Property="Height"
+                    Value="200"/>
+            <Setter Property="NeedleWidth"
+                    Value="0"/>
+        </Style>
+    </Page.Resources>
+
+    <StackPanel Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock Text="X"/>
+        <controls:RadialGauge Value="{x:Bind viewModel.AccelerometerReading.AccelerationX, Mode=OneWay, Converter={StaticResource ScaleConverter}, ConverterParameter=1000}"                              
+                                TrailBrush="HotPink"/>
+
+        <TextBlock Text="Z"
+                    Margin="0,50,0,0"/>
+        <controls:RadialGauge Value="{x:Bind viewModel.AccelerometerReading.AccelerationZ, Mode=OneWay, Converter={StaticResource ScaleConverter}, ConverterParameter=1000}"
+                                TrailBrush="Gold"/>
+    </StackPanel>
+</Page>

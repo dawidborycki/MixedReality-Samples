@@ -1,0 +1,58 @@
+﻿<Page
+    x:Class="VisionAssistant.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:VisionAssistant"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <Thickness x:Key="DefaultMargin">10</Thickness>
+
+        <Style TargetType="Button">
+            <Setter Property="Margin"
+                    Value="{StaticResource DefaultMargin}"/>
+        </Style>
+
+        <Style TargetType="TextBlock">
+            <Setter Property="Margin"
+                    Value="{StaticResource DefaultMargin}"/>
+            <Setter Property="HorizontalAlignment"
+                    Value="Center"/>
+            <Setter Property="FontSize"
+                    Value="34"/>
+        </Style>
+    </Page.Resources>
+
+    <Pivot Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <PivotItem Header="Analysis">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <StackPanel Orientation="Horizontal">
+                    <Button Content="Tell me what I see"
+                    Click="{x:Bind viewModel.DescribeImage}"
+                    IsEnabled="{x:Bind viewModel.IsDescribeImageButtonEnabled, Mode=OneWay}"/>
+
+                    <Button Content="Look up"
+                    Click="{x:Bind viewModel.Search}"
+                    IsEnabled="{x:Bind viewModel.IsSearchButtonEnabled, Mode=OneWay}"/>
+                </StackPanel>
+
+                <TextBlock Text="{x:Bind viewModel.ImageDescription, Mode=OneWay}"
+                    Grid.Row="1"/>
+
+                <Image Source="{x:Bind viewModel.Image, Mode=OneWay}"
+                Grid.Row="2"/>
+            </Grid>
+        </PivotItem>
+        <PivotItem Header="Web page">
+            <WebView Source="{x:Bind viewModel.WebPage.Url, Mode=OneWay}"/>
+        </PivotItem>
+    </Pivot>
+</Page>

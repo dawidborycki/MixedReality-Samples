@@ -1,0 +1,27 @@
+﻿<Page
+    x:Class="Communication.Consumer.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Communication.Consumer"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <Style TargetType="Ellipse">
+            <Setter Property="Fill"
+                    Value="MediumPurple"/>
+        </Style>
+    </Page.Resources>
+
+<Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Ellipse RenderTransform="{x:Bind viewModel.EllipseTransform, Mode=OneWay}"
+            Width="{x:Bind viewModel.EllipseSize.Width}"
+            Height="{x:Bind viewModel.EllipseSize.Height}"/>
+
+    <Rectangle Width="{x:Bind viewModel.RectangleSize.Width}" 
+            Height="{x:Bind viewModel.RectangleSize.Height}" 
+            Stroke="{x:Bind viewModel.RectangleBrush, Mode=OneWay}"
+            StrokeThickness="{x:Bind viewModel.RectangleStrokeThickness}"/>
+</Grid>
+</Page>

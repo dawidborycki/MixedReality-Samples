@@ -1,0 +1,14 @@
+﻿<Application
+    x:Class="MediaControls.Audio.App"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:converters="using:MediaControls.Audio.Converters"
+    xmlns:commonConverters="using:MixedReality.Common.Converters"
+    RequestedTheme="Light">
+    
+    <Application.Resources>
+        <converters:AudioSourceToStringConverter x:Key="AudioSourceToStringConverter"/>
+        <converters:VoiceToObjectConverter x:Key="VoiceToObjectConverter"/>
+        <commonConverters:LogicalNegationConverter x:Key="LogicalNegationConverter"/>
+    </Application.Resources>
+</Application>

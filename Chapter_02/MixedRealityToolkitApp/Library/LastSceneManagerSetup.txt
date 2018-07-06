@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/HoloToolkit-Examples/Medical/Scenes/MedicalExample.unity
+  isLoaded: 1
+  isActive: 1

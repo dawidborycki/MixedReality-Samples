@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoloToolkitInterfaces", "HoloToolkitInterfaces.csproj", "{26626DF8-6F23-5089-75B9-5C1EC8175B7F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoloToolkitInterfaces.Editor", "HoloToolkitInterfaces.Editor.csproj", "{C7303320-CBEC-BB06-41A8-B83A7A0BE008}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{26626DF8-6F23-5089-75B9-5C1EC8175B7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26626DF8-6F23-5089-75B9-5C1EC8175B7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26626DF8-6F23-5089-75B9-5C1EC8175B7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26626DF8-6F23-5089-75B9-5C1EC8175B7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7303320-CBEC-BB06-41A8-B83A7A0BE008}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7303320-CBEC-BB06-41A8-B83A7A0BE008}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7303320-CBEC-BB06-41A8-B83A7A0BE008}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7303320-CBEC-BB06-41A8-B83A7A0BE008}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

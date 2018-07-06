@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoloAugmentedExperience", "HoloAugmentedExperience.csproj", "{C5E154FF-6046-08CA-4A78-35CE3515D2F2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoloAugmentedExperience.Plugins", "HoloAugmentedExperience.Plugins.csproj", "{C65CDFF6-ECCC-E9F4-4D1C-BA9A987EC29D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoloAugmentedExperience.Editor", "HoloAugmentedExperience.Editor.csproj", "{9101639D-6D8E-1916-2BA4-C84635B997B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HoloAugmentedExperience.Editor.Plugins", "HoloAugmentedExperience.Editor.Plugins.csproj", "{06C062BF-529D-9693-1346-A3FFFDF8E10C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C5E154FF-6046-08CA-4A78-35CE3515D2F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5E154FF-6046-08CA-4A78-35CE3515D2F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5E154FF-6046-08CA-4A78-35CE3515D2F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5E154FF-6046-08CA-4A78-35CE3515D2F2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C65CDFF6-ECCC-E9F4-4D1C-BA9A987EC29D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C65CDFF6-ECCC-E9F4-4D1C-BA9A987EC29D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C65CDFF6-ECCC-E9F4-4D1C-BA9A987EC29D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C65CDFF6-ECCC-E9F4-4D1C-BA9A987EC29D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9101639D-6D8E-1916-2BA4-C84635B997B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9101639D-6D8E-1916-2BA4-C84635B997B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9101639D-6D8E-1916-2BA4-C84635B997B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9101639D-6D8E-1916-2BA4-C84635B997B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{06C062BF-529D-9693-1346-A3FFFDF8E10C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06C062BF-529D-9693-1346-A3FFFDF8E10C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06C062BF-529D-9693-1346-A3FFFDF8E10C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06C062BF-529D-9693-1346-A3FFFDF8E10C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

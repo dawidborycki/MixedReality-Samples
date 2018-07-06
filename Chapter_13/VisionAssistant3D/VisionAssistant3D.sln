@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisionAssistant3D", "VisionAssistant3D.csproj", "{3AD46E13-5502-C404-C4CE-82137A09A49C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VisionAssistant3D.Editor", "VisionAssistant3D.Editor.csproj", "{F011B123-0E13-B61E-35AC-BCAB0F0949CA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3AD46E13-5502-C404-C4CE-82137A09A49C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3AD46E13-5502-C404-C4CE-82137A09A49C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3AD46E13-5502-C404-C4CE-82137A09A49C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3AD46E13-5502-C404-C4CE-82137A09A49C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F011B123-0E13-B61E-35AC-BCAB0F0949CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F011B123-0E13-B61E-35AC-BCAB0F0949CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F011B123-0E13-B61E-35AC-BCAB0F0949CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F011B123-0E13-B61E-35AC-BCAB0F0949CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

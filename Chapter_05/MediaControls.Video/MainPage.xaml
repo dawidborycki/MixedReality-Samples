@@ -1,0 +1,52 @@
+﻿<Page
+    x:Class="MediaControls.Video.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MediaControls.Video"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Margin"
+                    Value="10"/>
+        </Style>
+
+        <Style TargetType="Canvas">
+            <Setter Property="Margin"
+                    Value="10"/>
+        </Style>
+    </Page.Resources>
+    
+    <Pivot Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <PivotItem Header="Static Image">
+            <Image Source="{x:Bind viewModel.Image, Mode=OneWay}" 
+                   Margin="10"/>
+        </PivotItem>
+
+        <PivotItem Header="Camera">
+            <StackPanel>
+                <StackPanel Orientation="Horizontal" >
+                    <Button Content="Start preview"
+                            IsEnabled="{x:Bind viewModel.IsPreviewActive, Mode=OneWay, Converter={StaticResource LogicalNegationConverter}}"
+                            Click="{x:Bind viewModel.PreviewStart}"/>
+
+                    <Button Content="Stop preview"
+                            IsEnabled="{x:Bind viewModel.IsPreviewActive, Mode=OneWay}"
+                            Click="{x:Bind viewModel.PreviewStop}"/>
+
+                    <Button Content="Detect faces"
+                            IsEnabled="{x:Bind viewModel.IsPreviewActive, Mode=OneWay}"
+                            Click="{x:Bind viewModel.DetectFaces}"/>
+                </StackPanel>
+
+                <Canvas>
+                    <ItemsControl ItemsSource="{x:Bind viewModel.Faces}"/>
+                    <CaptureElement Source="{x:Bind viewModel.CameraCapture.MediaCapture, Mode=OneWay}"
+                            Canvas.ZIndex="-1"/>
+                </Canvas>
+            </StackPanel>
+        </PivotItem>
+    </Pivot>
+</Page>

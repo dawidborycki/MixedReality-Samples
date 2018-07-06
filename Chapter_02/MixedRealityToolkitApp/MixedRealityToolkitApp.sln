@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MixedRealityToolkitApp", "MixedRealityToolkitApp.csproj", "{8E6D86EC-D623-F07E-2EB8-49FE4CA11161}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MixedRealityToolkitApp.Editor", "MixedRealityToolkitApp.Editor.csproj", "{84179B1A-284C-7045-1D95-30339F9D4A7E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E6D86EC-D623-F07E-2EB8-49FE4CA11161}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E6D86EC-D623-F07E-2EB8-49FE4CA11161}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E6D86EC-D623-F07E-2EB8-49FE4CA11161}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E6D86EC-D623-F07E-2EB8-49FE4CA11161}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84179B1A-284C-7045-1D95-30339F9D4A7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84179B1A-284C-7045-1D95-30339F9D4A7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84179B1A-284C-7045-1D95-30339F9D4A7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84179B1A-284C-7045-1D95-30339F9D4A7E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
